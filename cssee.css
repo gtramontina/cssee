@@ -1,0 +1,18 @@
+body.debug * { outline:1px solid #6B1D1E }
+body.debug *:hover { background-color: #6B1D1E }
+body.debug * * { outline:1px solid #A02B2C }
+body.debug * *:hover { background-color: #A02B2C }
+body.debug * * * { outline:1px solid #B53032 }
+body.debug * * *:hover { background-color: #B53032 }
+body.debug * * * * { outline:1px dashed #6B1D1E }
+body.debug * * * *:hover { background-color: #6B1D1E }
+body.debug * * * * * { outline:1px dashed #A02B2C }
+body.debug * * * * *:hover { background-color: #A02B2C }
+body.debug * * * * * * { outline:1px dashed #B53032 }
+body.debug * * * * * *:hover { background-color: #B53032 }
+body.debug * * * * * * * { outline:1px dotted #6B1D1E }
+body.debug * * * * * * *:hover { background-color: #6B1D1E }
+body.debug * * * * * * * * { outline:1px dotted #A02B2C }
+body.debug * * * * * * * *:hover { background-color: #A02B2C }
+body.debug * * * * * * * * * { outline:1px dotted #B53032 }
+body.debug * * * * * * * * *:hover { background-color: #B53032 }
