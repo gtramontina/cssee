@@ -4,7 +4,7 @@ describe('cssee.js', function() {
     expect($('head > link[rel=stylesheet][href$="cssee.css"]')).to.not.be.empty();
   });
 
-  it('adds a "debug" class to the body tag', function() {
-    expect($('body').hasClass('debug')).to.be.ok();
+  it('adds a "cssee-debug" class to the body tag', function() {
+    expect($('body').hasClass('cssee-debug')).to.be.ok();
   });
 });
