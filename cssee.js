@@ -1,14 +1,9 @@
 (function() {
-  var id = 'http://raw.github.com/gtramontina/cssee/master/cssee.css';
-  if (document.getElementById(id)) return;
+  var cssee = 'http://raw.github.com/gtramontina/cssee/master/cssee.css';
 
-  var link  = document.createElement('link');
-  link.id   = id;
-  link.href = id;
-  link.rel  = 'stylesheet';
-  link.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(link);
+  var head = document.getElementsByTagName('head')[0];
+  head.innerHTML += '<link rel="stylesheet" href="'+cssee+'" />';
 
-  var existingClasses = document.body.getAttribute('class');
+  var existingClasses = document.body.getAttribute('class') || '';
   document.body.setAttribute('class', existingClasses + ' debug');
 })();
