@@ -5,5 +5,5 @@
   head.innerHTML += '<link rel="stylesheet" href="'+cssee+'">';
 
   var existingClasses = document.body.getAttribute('class') || '';
-  document.body.setAttribute('class', existingClasses + ' debug');
+  document.body.setAttribute('className', existingClasses + ' cssee-debug');
 })();

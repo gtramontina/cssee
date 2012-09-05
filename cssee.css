@@ -1,2 +1,2 @@
-body.debug * { outline:1px solid red }
-body.debug *:hover { outline-width: 2px }
+body.cssee-debug * { outline:1px solid red }
+body.cssee-debug *:hover { outline-width: 2px }
