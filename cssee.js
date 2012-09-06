@@ -1,9 +1,19 @@
+/* CSS borrowed from Chris Page's "A Handy CSS Debugging Snippet" - http://homepage.mac.com/chrispage/iblog/C42511381/E20060806095030/index.html */
 (function() {
-  var cssee = 'https://raw.github.com/gtramontina/cssee/master/css.ee';
+  var cssee = '\
+    * { outline: 2px dotted red !important }\
+    * * { outline: 2px dotted green !important }\
+    * * * { outline: 2px dotted orange !important }\
+    * * * * { outline: 2px dotted blue !important }\
+    * * * * * { outline: 1px solid red !important }\
+    * * * * * * { outline: 1px solid green !important }\
+    * * * * * * * { outline: 1px solid orange !important }\
+    * * * * * * * * { outline: 1px solid blue !important }\
+  ';
 
-  var head = document.getElementsByTagName('head')[0];
-  head.innerHTML += '<link rel="stylesheet" href="'+cssee+'" type="text/css">';
+  var style = document.createElement('style');
+  style.id = 'cssee';
+  style.innerHTML = cssee;
+  document.body.appendChild(style);
 
-  var existingClasses = document.body.getAttribute('class') || '';
-  document.body.setAttribute('class', existingClasses + ' cssee-debug');
 })();
